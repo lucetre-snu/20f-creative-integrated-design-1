@@ -3,7 +3,7 @@
 
 ## 몰라페우스 w. Morpheus3D [Homepage](https://morpheus3d.co.kr/wp/en/)
 ### 팀 구성
-* **이진호**, **오아영**, 손상준
+* **이진호**, **오아영**, **손상준**
 ### 프로젝트 기획
 * 프로젝트 목표: **Deep learning 기반 얼굴 주름 감지 기술 개발**
   1. Data Annotation 주름영역 masking 및 데이터 labelling 
@@ -34,3 +34,4 @@
 * Fully Convolutional Neural Network
 * U-Net: Convolutional Networks for Biomedical Image Segmentation
     * [Homepage](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
+    * https://github.com/hanyoseob/youtube-cnn-002-pytorch-unet
