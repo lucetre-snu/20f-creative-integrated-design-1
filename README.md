@@ -30,3 +30,7 @@
   2. Existing Methods
   > 기존 회사 내부 모듈 (w. & w.o. Control parameter tuning) <br>
   > 이미지 프로세싱 기법들을 여러가지 종합한 알고리즘 
+### Background Research
+* Fully Convolutional Neural Network
+* U-Net: Convolutional Networks for Biomedical Image Segmentation
+    * [Homepage](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
