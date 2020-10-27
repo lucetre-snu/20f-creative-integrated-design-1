@@ -1,0 +1,14 @@
+icons/.DS_Store
+database/
+*.pyc
+*.pkl
+.*.swp
+
+build/
+dist/
+
+tags
+test.py
+.idea/
+.vscode/
+tools/
