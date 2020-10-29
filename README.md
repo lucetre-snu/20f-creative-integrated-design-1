@@ -1,7 +1,7 @@
 # 20f-creative-integrated-design-1
 창의적통합설계1 (2020년도, 2학기, M1522.000200_001)
 
-## 몰라페우스 w. Morpheus3D [Homepage](https://morpheus3d.co.kr/wp/en/)
+## Mollapheus w. Morpheus3D [Homepage](https://morpheus3d.co.kr/wp/en/)
 ### 팀 구성
 * **이진호**, **오아영**, **손상준**
 ### 프로젝트 기획
