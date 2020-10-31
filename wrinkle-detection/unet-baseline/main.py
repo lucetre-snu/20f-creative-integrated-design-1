@@ -33,8 +33,8 @@ def main():
     parser.add_argument("--loss", default="weighted_BCE", type=str, dest="loss")
 
     parser.add_argument("--data_dir", default="./DATA", type=str, dest="data_dir")
-    parser.add_argument("--ckpt_dir", default="./unet_baseline/checkpoint", type=str, dest="ckpt_dir")
-    parser.add_argument("--log_dir", default="./unet_baseline/log", type=str, dest="log_dir")
+    parser.add_argument("--ckpt_dir", default="./unet-baseline/checkpoint", type=str, dest="ckpt_dir")
+    parser.add_argument("--log_dir", default="./unet-baseline/log", type=str, dest="log_dir")
 
     parser.add_argument("--mode", default="train", type=str, dest="mode")
     parser.add_argument("--train_continue", default="off", type=str, dest="train_continue")
