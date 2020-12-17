@@ -6,7 +6,7 @@ import torch.nn as nn
 
 fn_tonumpy = lambda x: x.to('cpu').detach().numpy().transpose(0, 2, 3, 1)
 fn_denorm = lambda x, mean, std: (x * std) + mean
-fn_class = lambda x: 1.0 * (x > 0.5)
+fn_class = lambda x: 1.0 * (x > 0)
 
 
 def f1_score(output, target):
@@ -19,9 +19,9 @@ def f1_score(output, target):
     fp = torch.sum((1-y_true)*y_pred)
     fn = torch.sum(y_true*(1-y_pred))
 
-    p = tp / (tp + fp + eps)
-    r = tp / (tp + fn + eps)
-    f1 = 2*p*r / (p+r+eps)
+    p = (tp + eps) / (tp + fp + eps)
+    r = (tp + eps) / (tp + fn + eps)
+    f1 = 2*p*r / (p+r)
     f1 = torch.where(torch.isnan(f1), torch.zeros_like(f1), f1)
     return tp, tn, fp, fn, f1
 

@@ -3,6 +3,7 @@ import math
 import numpy as np
 from PIL import Image
 import cv2
+import imutils
 
 import torch
 import torch.nn as nn
@@ -110,6 +111,26 @@ class RandomResizedCrop(object):
         crop_input = input[h_start:h_end, w_start:w_end, :]
         label = cv2.resize(crop_label, dsize=(w, h))
         input = cv2.resize(crop_input, dsize=(w, h))
+
+        data = {'label': label, 'input': input}
+
+        return data
+
+
+class RandomRotation(object):
+    def __init__(self, max_degree=30):
+        self.max_degree = max_degree
+
+    def __call__(self, data):
+        label, input = data['label'], data['input']
+
+        h, w = label.shape
+        degree = np.random.rand(1)[0] * (2 * self.max_degree) - self.max_degree
+        rotated_input = imutils.rotate_bound(input, degree)
+        rotated_label = imutils.rotate_bound(label, degree)
+
+        label = cv2.resize(rotated_label, dsize=(w, h))
+        input = cv2.resize(rotated_input, dsize=(w, h))
 
         data = {'label': label, 'input': input}
 
