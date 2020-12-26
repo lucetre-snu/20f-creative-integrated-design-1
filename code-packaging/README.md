@@ -1,4 +1,4 @@
-core로# SNU x Morpheus 3D Wrinkle Detetion
+# SNU x Morpheus 3D Wrinkle Detetion
 
 최종적으로 두가지 method를 제안하였는데 두가지 메소드가 각각 wbce_model 폴더와 partitioned_model 폴더에 들어가 있습니다.
 
